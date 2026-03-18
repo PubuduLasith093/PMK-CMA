@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "PMK Child",
+    "slug": "pmk-child-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#4A90E2"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pmk.childapp",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "PMK Child needs your location to keep you safe and help your parents know where you are.",
+        "NSLocationAlwaysUsageDescription": "PMK Child needs your location in the background to keep you safe even when the app is closed.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "PMK Child needs your location to keep you safe and help your parents know where you are.",
+        "NSPhotoLibraryUsageDescription": "PMK Child needs access to your photo library to let you share images with your family.",
+        "NSCameraUsageDescription": "PMK Child needs camera access to let you take and share photos with your family.",
+        "NSPhotoLibraryAddUsageDescription": "PMK Child needs permission to save photos to your library.",
+        "NSMicrophoneUsageDescription": "PMK Child needs microphone access for voice messages."
+      }
+    },
+    "android": {
+      "package": "com.pmk.childapp",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "BATTERY_STATS",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-av",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow PMK Child to use your location to keep you safe."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow PMK Child to access your photos to share with family.",
+          "cameraPermission": "Allow PMK Child to use your camera to take photos.",
+          "microphonePermission": "Allow PMK Child to record audio for video messages."
+        }
+      ],
+      [
+        "expo-document-picker"
+      ],
+      "expo-secure-store"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c0a7f2d3-071e-4433-860e-80ff0164b01a"
+      }
+    }
+  }
+}

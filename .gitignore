@@ -1,0 +1,129 @@
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+ios/.xcode.env.local
+
+# Android/IntelliJ
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# fastlane
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+
+# Bundle artifact
+*.jsbundle
+
+# Ruby / CocoaPods
+/ios/Pods/
+/vendor/bundle/
+
+# Environment
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+
+# Testing
+coverage/
+.nyc_output/
+__tests__/__snapshots__/
+
+# Misc
+.vscode/
+.history/
+*.log
+*.orig
+
+# React Native / Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+
+# EAS Build
+.eas/
+
+# Temporary files
+*.swp
+*.swo
+*~
+.tmp/
+tmp/
+
+# Metro
+.metro-health-check*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Debug
+yarn-debug.log*
+yarn-error.log*
+
+# Realm
+default.realm
+default.realm.lock
+default.realm.management/
+
+# Firebase
+google-services.json
+GoogleService-Info.plist
+
+# Sensitive data
+credentials/
+secrets/
+auth-token.txt
+device-config.json
+
+# Backup files
+*.backup
+*.bak
+
+# Gradle wrapper binary (will be regenerated)
+gradle-wrapper.jar
